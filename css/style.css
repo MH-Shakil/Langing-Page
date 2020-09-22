@@ -1,0 +1,818 @@
+/*RESET CSS BEGIN */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*RESET CSS END*/
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+=========================================
+ HERO 
+=========================================
+*/
+
+header {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li a {
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #d7d7d7;
+    transition: color 0.1s, font-weight 0.1s;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav li:last-child a {
+    padding-right: 0;
+}
+
+.nav li a:hover {
+    color: #ffffff;
+    font-weight: 700;
+    transition: color 0.1s, font-weight 0.1s;
+}
+
+#hero {
+    background-image: linear-gradient(rgba(86, 56, 150, 0.7), rgba(86, 56, 150, 0.7)), url(../img/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.head-info {
+    height: 748px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.head-para {
+    font-size: 33px;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 85px;
+    font-family: 'Lato', sans-serif;
+}
+
+.learn-more-btn {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 8px 30px;
+    color: #dfd9e9;
+}
+
+
+/*
+=========================================
+ WHAT WE DO 
+=========================================
+*/
+
+#service-part1 {
+    margin-top: 100px;
+}
+
+.services {
+    display: flex;
+}
+
+.what-we-do {
+    flex: 1;
+    order: 1;
+}
+
+.what-we-do h2 {
+    font-size: 127px;
+    text-transform: uppercase;
+    color: #e1e1e1;
+    font-family: 'Lato', sans-serif;
+}
+
+.block {
+    display: block;
+}
+
+.image-icon {
+    width: 55px;
+    height: 47px;
+}
+
+.col {
+    flex: 1;
+    order: 1;
+}
+
+.row-4-serviecs {
+    display: flex;
+}
+
+.image-container {
+    flex: 1;
+    order: 1;
+}
+
+.info-detail {
+    flex: 4;
+    order: 2;
+    margin-bottom: 40px;
+}
+
+.col h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.col h3 a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    transition: color 0.1s;
+}
+
+.col h3 a:hover {
+    color: #654b9f;
+    transition: color 0.1s;
+}
+
+.col p {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*
+=========================================
+ WHAT WE DO 2ND PART
+=========================================
+*/
+
+#service-part2 {
+    background-image: url(../img/custom-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.customer-service {
+    height: 871px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#service-part2 h4 {
+    font-size: 50px;
+    color: #9488b7;
+    margin-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+.service-para {
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.help-btn {
+    padding: 15px;
+    font-size: 18px;
+    background: #503392;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.icon-arrow {
+    margin-left: 5px;
+}
+
+
+/*
+=========================================
+ PORTFOLIO
+=========================================
+*/
+
+#portfolio {
+    margin-top: 120px;
+}
+
+.portfolio-info h5 {
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.portfolio-info p {
+    font-size: 18px;
+    margin-bottom: 55px;
+    font-family: 'Lato', sans-serif;
+}
+
+.info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+}
+
+.category li {
+    padding: 10px 20px;
+    border: 2px solid black;
+    margin: 0 10px;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.category li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.category li:hover{
+    background: #4e3391;
+    border: 2px solid #4e3391;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.category li a:hover {
+    
+    color: white;
+    transition: background 0.3s, color 0.3s;
+    
+    ;
+}
+
+.works {
+    margin-top: 40px;
+}
+
+.images {
+    display: flex;
+}
+
+.images li {
+    width: 100%;
+    margin: 2px 2px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.images li img {
+    width: 100%;
+    opacity: 0.7;
+    transform: scale(1.02);
+    transition: transform 0.5s opacity 0.5s;
+}
+
+.images li img:hover {
+    opacity: 1;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+
+/*
+=========================================
+ GLORIES
+=========================================
+*/
+
+#records {
+    margin-top: 100px;
+    background-image: linear-gradient(rgba(80, 54, 136, 0.7), rgba(80, 54, 136, 0.7)), url(../img/computer-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#records .container {}
+
+.row {
+    display: flex;
+    height: 384px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-iicon {
+    width: 51px;
+    height: 51px;
+}
+
+.col-4-detail {
+    text-align: center;
+}
+
+.col-4-detail h5 {
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.col-4-detail p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+
+/*
+=========================================
+ CONTACT
+=========================================
+*/
+
+#contact {
+    background: #232323;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.contact-info h6 {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message {
+    flex: 1;
+    order: 1;
+}
+
+.address {
+    flex: 1;
+    order: 1;
+    margin: 75px 0;
+}
+
+.message h7 {
+    font-size: 33px;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+.contact-form {
+    margin-top: 50px;
+}
+
+.input {
+    width: 100%;
+    padding: 5px;
+}
+
+.input1 {
+    width: 85%;
+    padding: 10px;
+    background: #232323;
+    border: 1px solid #ffffff;
+}
+
+.message1 {
+    height: 90px;
+    resize: none;
+}
+
+.submit {
+    background: #503392;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.address h7 {
+    color: #ffffff;
+    font-size: 33px;
+    font-family: 'Lato', sans-serif;
+}
+
+.list-address li {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    flex: 10;
+    order: 2;
+}
+
+.list-address {
+    display: flex;
+    margin: 25px 0;
+}
+
+.icon-small {
+    color: white;
+    font-size: 25px;
+    flex: 1;
+    order: 1;
+}
+
+
+/*
+=========================================
+ FOOTER
+=========================================
+*/
+
+#footer {
+    background: #1f1f1f;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container p {
+    font-family: 'Lato', sans-serif;
+    color: #494949;
+    font-size: 20px;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons li {
+    padding: 0 20px;
+}
+
+
+/*
+=========================================
+ RESPONSIVENESS
+=========================================
+*/
+
+@media only screen and (max-width: 872px) {
+    .nav li a {
+        padding: 0 15px;
+    }
+    .services {
+        flex-direction: column;
+    }
+    .what-we-do {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .row-4-serviecs {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-container {
+        margin-bottom: 5px;
+    }
+    .customer-service {
+        align-items: center;
+        height: 600px;
+    }
+    #service-part2 .block {
+        text-align: center;
+    }
+    .icons li {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav li a {
+        padding: 0px 7px;
+        font-size: 14px;
+    }
+    .nav li {
+        margin-top: 7px;
+    }
+    .head-info {
+        height: 550px;
+    }
+    .head-info h1 {
+        font-size: 40px;
+    }
+    .head-para {
+        font-size: 25px;
+        margin-bottom: 60px;
+    }
+    .what-we-do h2 {
+        font-size: 70px;
+    }
+    #service-part1 {
+        margin-top: 50px;
+    }
+    #service-part2 h4 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .customer-service {
+        height: 450px;
+    }
+    .service-para {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    #service-part2 .block {
+        display: contents;
+    }
+    .help-btn {
+        font-size: 15px;
+    }
+    .portfolio-info p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    .info1 {
+        text-align: center;
+    }
+    .category li a {
+        font-size: 14px;
+    }
+    .category li {
+        padding: 5px 3px;
+        margin: 0 2px;
+        ;
+    }
+    .works {
+        margin-top: 30px;
+    }
+    .images {
+        flex-direction: column;
+    }
+    .row {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .img-iicon {
+        width: 35px;
+        height: 35px;
+    }
+    .col-4-detail h5 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .col-4-detail p {
+        font-size: 15px;
+    }
+    .col-4-detail {
+        margin-bottom: 15px;
+    }
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info p {
+        text-align: center;
+    }
+    .list-address li {
+        margin-left: 10px;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .icons {
+        margin-top: 13px;
+        justify-content: center;
+    }
+    .icons li {
+        padding: 0 8px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .info1 {
+        text-align: center;
+    }
+    .nav li a {
+        font-size: 15px;
+        padding: 0 6px;
+    }
+    .nav {
+        margin-left: 0px;;
+        ;
+    }
+    .category li {
+        padding: 10px 10px;
+    }
+}
+
+
+.arrow{
+    height: 100px;
+    width: 100px;
+    background: black;
+    
+}
+
+
+
